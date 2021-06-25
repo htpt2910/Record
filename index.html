@@ -7,34 +7,60 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Record</title>
+        <title>Record Website</title>
+        <link rel="stylesheet" href="style.css">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    on    <![endif]-->
-        <form>
-            <label>Họ và tên</label>
-            <input type="text"><br>
-            <label>Giới tính</label>
-            <input type="text"><br>
-            <label>Ngày sinh</label>
-            <input type="date"><br>
-            <label>Địa chỉ</label>
-            <input type="text"><br>
-            <label>Thêm ghi âm của bạn</label>
+        <h1><strong>Record Website</strong></h1>
+        <div class="split left">
+            <form>
+                <fieldset>
+                    <legend>Thông tin của bạn</legend>
+                    <table cellspacing="20">
+                        <tr>
+                            <td><span class="label name">Họ và tên</span></td>
+                            <td><input type="text" id="text"></td><br>
+                        </tr>
+                        <tr>
+                            <td><span class="label name">Giới tính</span></td>
+                            <td>
+                                <input type="radio" id="male">
+                                <label for="male">Nam</label>
+                                &nbsp; 
+                                <input type="radio" id="female">
+                                <label for="female">Nữ</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="label name">Ngày sinh</span></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="label name">Địa chỉ</span></td>
+                            <td><input type="text" id = "text"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form> 
+        </div>
+        
+        <div class="split right">
+            <h2><strong>Thêm ghi âm của bạn</strong></h2>
+            <input type="submit" id="sub">
             <script src="audio_access.js" async defer></script>
             <div id="buttons">
                 <button class="record">Record</button>
                 <button class="stop">Stop</button>
             </div>
-            <section class = "sound-clips">
-            </section>
-            <br><input type="submit">
-        </form>
-        <script src="" async defer></script>
+            <div class="sound">
+                <section class = "sound-clips"></section>
+            </div>
+            
+        </div>  
+        
+        <!--<script src="" async defer></script>-->
     </body>
 </html>
