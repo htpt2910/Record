@@ -1,5 +1,5 @@
-const record = document.querySelector('.record');
-const stop = document.querySelector('.stop');
+const record = document.querySelector('#record');
+const stop = document.querySelector('#stop');
 const soundClips = document.querySelector('.sound-clips');
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     console.log('getUserMedia supported.');

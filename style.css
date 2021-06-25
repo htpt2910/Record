@@ -20,8 +20,9 @@ fieldset {
     position: relative;
     top: 120px; left: 120px;
     width: 380px;
-    height: 260px;
+    height: 270px;
     border-style: none;
+    border-radius: 10%;
 }
 
 legend {
@@ -37,7 +38,7 @@ legend {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
-#text {
+.text {
     border-style: none;
     border-bottom: solid #2F5D62;
     background-color: #CDF0EA;
@@ -62,22 +63,22 @@ right: 0;
 width: 60%;
 
 }
-
-.record {
-    background-color: #5F939A;
+.buttons {
     border-width: 20px;
-    padding: 5px 70px;
+}
+#record {
+    background-color: #5F939A;
+    padding: 5px 70px; 
     position: relative;
     top: 50px; left: 150px;
 }
-.stop {
+#stop {
     background-color: #5F939A;
-    border-width: 20px;
-    padding: 5px 70px;
+    padding: 5px 70px; 
     position: relative;
     top: 50px; left: 150px;
     
-}
+} 
 .sound {
     margin:5px, 5px;
     position: relative;
